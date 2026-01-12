@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Sep 17 11:28:57 2025
+# Process ID: 5196
+# Current directory: C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/lc3/vivadoRTL/lc3/lc3.runs/impl_1
+# Command line: vivado.exe -log lc3_cpu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lc3_cpu.tcl -notrace
+# Log file: C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/lc3/vivadoRTL/lc3/lc3.runs/impl_1/lc3_cpu.vdi
+# Journal file: C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/lc3/vivadoRTL/lc3/lc3.runs/impl_1\vivado.jou
+# Running On: ThinhPhat, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 17024 MB
+#-----------------------------------------------------------
+source lc3_cpu.tcl -notrace

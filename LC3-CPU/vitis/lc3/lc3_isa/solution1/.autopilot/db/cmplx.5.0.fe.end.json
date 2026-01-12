@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "lc3",
+        "file": "lc3.cpp",
+        "fileloc": "1",
+        "instructions": "358",
+        "total_instructions": "358",
+        "calls": "",
+        "basicblocks": "40",
+        "loads": {
+            "G": "28"
+        },
+        "stores": {
+            "G": "39"
+        }
+    }
+}

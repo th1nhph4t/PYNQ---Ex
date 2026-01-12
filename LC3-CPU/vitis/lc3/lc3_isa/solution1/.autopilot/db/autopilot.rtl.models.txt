@@ -1,0 +1,4 @@
+lc3_reg_r_RAM_AUTO_1R1W
+lc3_memory_RAM_AUTO_1R1W
+lc3_control_s_axi
+lc3

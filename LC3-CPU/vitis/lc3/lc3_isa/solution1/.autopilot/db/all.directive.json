@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "lc3",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "lc3"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/LVTN/lc3/lc3_isa/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "lc3",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "lc3"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/LVTN/lc3/lc3_isa/solution1/csynth.tcl",
+    "sourceLine": 15,
+    "success": true
+  }
+]

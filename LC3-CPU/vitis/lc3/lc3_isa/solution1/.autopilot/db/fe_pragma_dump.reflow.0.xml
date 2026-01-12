@@ -1,0 +1,20 @@
+<pragmas>
+<pragma file="lc3.cpp" line="2" pragmaType="interface" parentfunction="lc3" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="lc3.cpp" line="3" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="IR" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="4" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="PC" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="5" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="PC_out" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="6" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R0" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="7" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="8" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R2" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="9" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R3" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="10" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R4" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="11" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R5" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="12" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R6" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="13" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="R7" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="14" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="n1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="15" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="z1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="16" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="p1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="17" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="N" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="18" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="Z" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lc3.cpp" line="19" pragmaType="interface" parentfunction="lc3" mode="s_axilite" port="P" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

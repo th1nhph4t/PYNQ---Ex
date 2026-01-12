@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/LVTN/lc3/lc3_isa/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=lc3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/LVTN/lc3/lc3_isa/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=lc3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:2:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:3:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=IR" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=PC" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=PC_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R5" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R6" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R7" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=n1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=z1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=p1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=N" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=Z" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lc3.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lc3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=P" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

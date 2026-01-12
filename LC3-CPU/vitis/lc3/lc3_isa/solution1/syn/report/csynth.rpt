@@ -1,0 +1,224 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lc3'
+================================================================
++ General Information: 
+    * Date:           Sat Apr 19 08:23:09 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        lc3_isa
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------+------+------+---------+--------+----------+---------+------+----------+----------+----+-----------+-----------+-----+
+    | Modules| Issue|      | Latency | Latency| Iteration|         | Trip |          |          |    |           |           |     |
+    | & Loops| Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|   BRAM   | DSP|     FF    |    LUT    | URAM|
+    +--------+------+------+---------+--------+----------+---------+------+----------+----------+----+-----------+-----------+-----+
+    |+ lc3   |     -|  0.15|        9|  90.000|         -|       10|     -|        no|  64 (22%)|   -|  877 (~0%)|  2034 (3%)|    -|
+    +--------+------+------+---------+--------+----------+---------+------+----------+----------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 9             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+--------------------------+-----------------+
+| Interface     | Register    | Offset | Width | Access | Description              | Bit Fields      |
++---------------+-------------+--------+-------+--------+--------------------------+-----------------+
+| s_axi_control | IR          | 0x10   | 32    | W      | Data signal of IR        |                 |
+| s_axi_control | PC          | 0x18   | 32    | W      | Data signal of PC        |                 |
+| s_axi_control | PC_out      | 0x20   | 32    | R      | Data signal of PC_out    |                 |
+| s_axi_control | PC_out_ctrl | 0x24   | 32    | R      | Control signal of PC_out | 0=PC_out_ap_vld |
+| s_axi_control | R0          | 0x30   | 32    | R      | Data signal of R0        |                 |
+| s_axi_control | R0_ctrl     | 0x34   | 32    | R      | Control signal of R0     | 0=R0_ap_vld     |
+| s_axi_control | R1          | 0x40   | 32    | R      | Data signal of R1        |                 |
+| s_axi_control | R1_ctrl     | 0x44   | 32    | R      | Control signal of R1     | 0=R1_ap_vld     |
+| s_axi_control | R2          | 0x50   | 32    | R      | Data signal of R2        |                 |
+| s_axi_control | R2_ctrl     | 0x54   | 32    | R      | Control signal of R2     | 0=R2_ap_vld     |
+| s_axi_control | R3          | 0x60   | 32    | R      | Data signal of R3        |                 |
+| s_axi_control | R3_ctrl     | 0x64   | 32    | R      | Control signal of R3     | 0=R3_ap_vld     |
+| s_axi_control | R4          | 0x70   | 32    | R      | Data signal of R4        |                 |
+| s_axi_control | R4_ctrl     | 0x74   | 32    | R      | Control signal of R4     | 0=R4_ap_vld     |
+| s_axi_control | R5          | 0x80   | 32    | R      | Data signal of R5        |                 |
+| s_axi_control | R5_ctrl     | 0x84   | 32    | R      | Control signal of R5     | 0=R5_ap_vld     |
+| s_axi_control | R6          | 0x90   | 32    | R      | Data signal of R6        |                 |
+| s_axi_control | R6_ctrl     | 0x94   | 32    | R      | Control signal of R6     | 0=R6_ap_vld     |
+| s_axi_control | R7          | 0xa0   | 32    | R      | Data signal of R7        |                 |
+| s_axi_control | R7_ctrl     | 0xa4   | 32    | R      | Control signal of R7     | 0=R7_ap_vld     |
+| s_axi_control | N           | 0xb0   | 32    | R      | Data signal of N         |                 |
+| s_axi_control | N_ctrl      | 0xb4   | 32    | R      | Control signal of N      | 0=N_ap_vld      |
+| s_axi_control | Z           | 0xc0   | 32    | R      | Data signal of Z         |                 |
+| s_axi_control | Z_ctrl      | 0xc4   | 32    | R      | Control signal of Z      | 0=Z_ap_vld      |
+| s_axi_control | P           | 0xd0   | 32    | R      | Data signal of P         |                 |
+| s_axi_control | P_ctrl      | 0xd4   | 32    | R      | Control signal of P      | 0=P_ap_vld      |
+| s_axi_control | n1          | 0xe0   | 32    | R      | Data signal of n1        |                 |
+| s_axi_control | n1_ctrl     | 0xe4   | 32    | R      | Control signal of n1     | 0=n1_ap_vld     |
+| s_axi_control | p1          | 0xf0   | 32    | R      | Data signal of p1        |                 |
+| s_axi_control | p1_ctrl     | 0xf4   | 32    | R      | Control signal of p1     | 0=p1_ap_vld     |
+| s_axi_control | z1          | 0x100  | 32    | R      | Data signal of z1        |                 |
+| s_axi_control | z1_ctrl     | 0x104  | 32    | R      | Control signal of z1     | 0=z1_ap_vld     |
++---------------+-------------+--------+-------+--------+--------------------------+-----------------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| IR       | in        | short    |
+| PC       | in        | short    |
+| PC_out   | out       | short&   |
+| R0       | out       | short&   |
+| R1       | out       | short&   |
+| R2       | out       | short&   |
+| R3       | out       | short&   |
+| R4       | out       | short&   |
+| R5       | out       | short&   |
+| R6       | out       | short&   |
+| R7       | out       | short&   |
+| N        | out       | short&   |
+| Z        | out       | short&   |
+| P        | out       | short&   |
+| n1       | out       | short&   |
+| p1       | out       | short&   |
+| z1       | out       | short&   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------------+----------+---------------------------------------+
+| Argument | HW Interface  | HW Type  | HW Info                               |
++----------+---------------+----------+---------------------------------------+
+| IR       | s_axi_control | register | name=IR offset=0x10 range=32          |
+| PC       | s_axi_control | register | name=PC offset=0x18 range=32          |
+| PC_out   | s_axi_control | register | name=PC_out offset=0x20 range=32      |
+| PC_out   | s_axi_control | register | name=PC_out_ctrl offset=0x24 range=32 |
+| R0       | s_axi_control | register | name=R0 offset=0x30 range=32          |
+| R0       | s_axi_control | register | name=R0_ctrl offset=0x34 range=32     |
+| R1       | s_axi_control | register | name=R1 offset=0x40 range=32          |
+| R1       | s_axi_control | register | name=R1_ctrl offset=0x44 range=32     |
+| R2       | s_axi_control | register | name=R2 offset=0x50 range=32          |
+| R2       | s_axi_control | register | name=R2_ctrl offset=0x54 range=32     |
+| R3       | s_axi_control | register | name=R3 offset=0x60 range=32          |
+| R3       | s_axi_control | register | name=R3_ctrl offset=0x64 range=32     |
+| R4       | s_axi_control | register | name=R4 offset=0x70 range=32          |
+| R4       | s_axi_control | register | name=R4_ctrl offset=0x74 range=32     |
+| R5       | s_axi_control | register | name=R5 offset=0x80 range=32          |
+| R5       | s_axi_control | register | name=R5_ctrl offset=0x84 range=32     |
+| R6       | s_axi_control | register | name=R6 offset=0x90 range=32          |
+| R6       | s_axi_control | register | name=R6_ctrl offset=0x94 range=32     |
+| R7       | s_axi_control | register | name=R7 offset=0xa0 range=32          |
+| R7       | s_axi_control | register | name=R7_ctrl offset=0xa4 range=32     |
+| N        | s_axi_control | register | name=N offset=0xb0 range=32           |
+| N        | s_axi_control | register | name=N_ctrl offset=0xb4 range=32      |
+| Z        | s_axi_control | register | name=Z offset=0xc0 range=32           |
+| Z        | s_axi_control | register | name=Z_ctrl offset=0xc4 range=32      |
+| P        | s_axi_control | register | name=P offset=0xd0 range=32           |
+| P        | s_axi_control | register | name=P_ctrl offset=0xd4 range=32      |
+| n1       | s_axi_control | register | name=n1 offset=0xe0 range=32          |
+| n1       | s_axi_control | register | name=n1_ctrl offset=0xe4 range=32     |
+| p1       | s_axi_control | register | name=p1 offset=0xf0 range=32          |
+| p1       | s_axi_control | register | name=p1_ctrl offset=0xf4 range=32     |
+| z1       | s_axi_control | register | name=z1 offset=0x100 range=32         |
+| z1       | s_axi_control | register | name=z1_ctrl offset=0x104 range=32    |
++----------+---------------+----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| + lc3                    | 0   |        |             |     |        |         |
+|   add_ln272_fu_1036_p2   |     |        | add_ln272   | add | fabric | 0       |
+|   add_ln272_1_fu_1044_p2 |     |        | add_ln272_1 | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln221   | add | fabric | 0       |
+|   add_ln225_fu_1066_p2   |     |        | add_ln225   | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln214   | add | fabric | 0       |
+|   add_ln217_fu_1084_p2   |     |        | add_ln217   | add | fabric | 0       |
+|   add_ln217_1_fu_1094_p2 |     |        | add_ln217_1 | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln207   | add | fabric | 0       |
+|   add_ln210_fu_1117_p2   |     |        | add_ln210   | add | fabric | 0       |
+|   add_ln210_1_fu_1127_p2 |     |        | add_ln210_1 | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln186   | add | fabric | 0       |
+|   add_ln189_fu_1140_p2   |     |        | add_ln189   | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln164   | add | fabric | 0       |
+|   add_ln168_fu_1196_p2   |     |        | add_ln168   | add | fabric | 0       |
+|   grp_fu_807_p2          |     |        | add_ln143   | add | fabric | 0       |
+|   add_ln146_fu_1205_p2   |     |        | add_ln146   | add | fabric | 0       |
+|   add_ln146_1_fu_1215_p2 |     |        | add_ln146_1 | add | fabric | 0       |
+|   grp_fu_807_p2          |     |        | add_ln122   | add | fabric | 0       |
+|   add_ln125_fu_1347_p2   |     |        | add_ln125   | add | fabric | 0       |
+|   add_ln125_1_fu_1357_p2 |     |        | add_ln125_1 | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln101   | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln73    | add | fabric | 0       |
+|   grp_fu_838_p2          |     |        | add_ln45    | add | fabric | 0       |
+|   add_ln52_fu_1502_p2    |     |        | add_ln52    | add | fabric | 0       |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + lc3             |           |           | 64   | 0    |        |          |      |         |                  |
+|   control_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
+|   reg_r_U         | ram_t2p   |           |      |      |        | reg_r    | auto | 1       | 16, 8, 1         |
+|   memory_U        | ram_1p    |           | 64   |      |        | memory   | auto | 1       | 16, 65536, 1     |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+--------------------------+
+| Type      | Options                  | Location                 |
++-----------+--------------------------+--------------------------+
+| interface | ap_ctrl_none port=return | lc3.cpp:2 in lc3, return |
+| interface | s_axilite port=IR        | lc3.cpp:3 in lc3, IR     |
+| interface | s_axilite port=PC        | lc3.cpp:4 in lc3, PC     |
+| interface | s_axilite port=PC_out    | lc3.cpp:5 in lc3, PC_out |
+| interface | s_axilite port=R0        | lc3.cpp:6 in lc3, R0     |
+| interface | s_axilite port=R1        | lc3.cpp:7 in lc3, R1     |
+| interface | s_axilite port=R2        | lc3.cpp:8 in lc3, R2     |
+| interface | s_axilite port=R3        | lc3.cpp:9 in lc3, R3     |
+| interface | s_axilite port=R4        | lc3.cpp:10 in lc3, R4    |
+| interface | s_axilite port=R5        | lc3.cpp:11 in lc3, R5    |
+| interface | s_axilite port=R6        | lc3.cpp:12 in lc3, R6    |
+| interface | s_axilite port=R7        | lc3.cpp:13 in lc3, R7    |
+| interface | s_axilite port=n1        | lc3.cpp:14 in lc3, n1    |
+| interface | s_axilite port=z1        | lc3.cpp:15 in lc3, z1    |
+| interface | s_axilite port=p1        | lc3.cpp:16 in lc3, p1    |
+| interface | s_axilite port=N         | lc3.cpp:17 in lc3, N     |
+| interface | s_axilite port=Z         | lc3.cpp:18 in lc3, Z     |
+| interface | s_axilite port=P         | lc3.cpp:19 in lc3, P     |
++-----------+--------------------------+--------------------------+
+
+
