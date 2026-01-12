@@ -1,2 +1,0 @@
-ALU_control_s_axi
-ALU

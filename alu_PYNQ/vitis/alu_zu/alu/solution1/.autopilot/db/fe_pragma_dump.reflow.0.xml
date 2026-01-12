@@ -1,7 +1,0 @@
-<pragmas>
-<pragma file="alu.cpp" line="22" pragmaType="interface" parentfunction="ALU" mode="ap_ctrl_none" port="return" name=""/>
-<pragma file="alu.cpp" line="23" pragmaType="interface" parentfunction="ALU" mode="s_axilite" port="a" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="alu.cpp" line="24" pragmaType="interface" parentfunction="ALU" mode="s_axilite" port="b" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="alu.cpp" line="25" pragmaType="interface" parentfunction="ALU" mode="s_axilite" port="op" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="alu.cpp" line="26" pragmaType="interface" parentfunction="ALU" mode="s_axilite" port="result" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-</pragmas>
