@@ -1,0 +1,310 @@
+
+*** Running vivado
+    with args -log alu_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source alu_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 488.566 ; gain = 183.613
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top alu_wrapper -part xczu5eg-sfvc784-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14744
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1922.281 ; gain = 381.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_wrapper' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/hdl/alu_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'alu' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'alu_ALU_0_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_ALU_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ALU_0_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_ALU_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'alu_ps8_0_axi_periph_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:321]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_BS3RUC' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:965]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_BS3RUC' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:965]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_10GGF4E' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:1097]
+INFO: [Synth 8-6157] synthesizing module 'alu_auto_ds_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_auto_ds_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'alu_auto_pc_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_auto_pc_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_10GGF4E' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:1097]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_QCDT6Z' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:1507]
+INFO: [Synth 8-6157] synthesizing module 'alu_auto_ds_1' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_auto_ds_1' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'alu_auto_pc_1' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_auto_pc_1' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_QCDT6Z' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:1507]
+INFO: [Synth 8-6157] synthesizing module 'alu_xbar_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_xbar_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'alu_xbar_0' is unconnected for instance 'xbar' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:924]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'alu_xbar_0' is unconnected for instance 'xbar' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:924]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'alu_xbar_0' has 40 connections declared, but only 38 given [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:924]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ps8_0_axi_periph_0' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:321]
+INFO: [Synth 8-6157] synthesizing module 'alu_rst_ps8_0_100M_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_rst_ps8_0_100M_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'alu_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:232]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'alu_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:232]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'alu_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:232]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'alu_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:232]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'alu_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:232]
+INFO: [Synth 8-6157] synthesizing module 'alu_zynq_ultra_ps_e_0_0' [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/.Xil/Vivado-33772-ThinhPhat/realtime/alu_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'pl_clk2' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7071] port 'pl_clk3' of module 'alu_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'alu_zynq_ultra_ps_e_0_0' has 86 connections declared, but only 79 given [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:239]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/synth/alu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'alu_wrapper' (0#1) [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/hdl/alu_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_QCDT6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_QCDT6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_10GGF4E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_10GGF4E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_BS3RUC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_BS3RUC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_BS3RUC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_BS3RUC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2035.371 ; gain = 494.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2053.301 ; gain = 512.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2053.301 ; gain = 512.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2053.301 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_zynq_ultra_ps_e_0_0/alu_zynq_ultra_ps_e_0_0/alu_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'alu_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2083.707 ; gain = 0.043
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_zynq_ultra_ps_e_0_0/alu_zynq_ultra_ps_e_0_0/alu_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'alu_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_ALU_0_0/alu_ALU_0_0/alu_ALU_0_0_in_context.xdc] for cell 'alu_i/ALU'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_ALU_0_0/alu_ALU_0_0/alu_ALU_0_0_in_context.xdc] for cell 'alu_i/ALU'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_xbar_0/alu_xbar_0/alu_xbar_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_xbar_0/alu_xbar_0/alu_xbar_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_ds_0/alu_auto_ds_0/alu_auto_ds_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_ds_0/alu_auto_ds_0/alu_auto_ds_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_pc_0/alu_auto_pc_0/alu_auto_pc_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_pc_0/alu_auto_pc_0/alu_auto_pc_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_ds_1/alu_auto_ds_1/alu_auto_ds_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_ds_1/alu_auto_ds_1/alu_auto_ds_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_pc_1/alu_auto_pc_1/alu_auto_pc_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_auto_pc_1/alu_auto_pc_1/alu_auto_pc_0_in_context.xdc] for cell 'alu_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_rst_ps8_0_100M_0/alu_rst_ps8_0_100M_0/alu_rst_ps8_0_100M_0_in_context.xdc] for cell 'alu_i/rst_ps8_0_100M'
+Finished Parsing XDC File [c:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.gen/sources_1/bd/alu/ip/alu_rst_ps8_0_100M_0/alu_rst_ps8_0_100M_0/alu_rst_ps8_0_100M_0_in_context.xdc] for cell 'alu_i/rst_ps8_0_100M'
+Parsing XDC File [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2083.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2083.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 2083.707 ; gain = 542.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 2083.707 ; gain = 542.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ALU. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for alu_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 2083.707 ; gain = 542.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2083.707 ; gain = 542.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module alu_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 2083.707 ; gain = 542.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2573.984 ; gain = 1033.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2573.984 ; gain = 1033.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2584.906 ; gain = 1043.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |alu_xbar_0              |         1|
+|2     |alu_auto_ds_0           |         1|
+|3     |alu_auto_pc_0           |         1|
+|4     |alu_auto_ds_1           |         1|
+|5     |alu_auto_pc_1           |         1|
+|6     |alu_ALU_0_0             |         1|
+|7     |alu_rst_ps8_0_100M_0    |         1|
+|8     |alu_zynq_ultra_ps_e_0_0 |         1|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |alu_ALU_0             |     1|
+|2     |alu_auto_ds           |     2|
+|4     |alu_auto_pc           |     2|
+|6     |alu_rst_ps8_0_100M    |     1|
+|7     |alu_xbar              |     1|
+|8     |alu_zynq_ultra_ps_e_0 |     1|
++------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 2598.707 ; gain = 1027.344
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2598.707 ; gain = 1057.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2598.707 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2647.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 10f84b9e
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:39 . Memory (MB): peak = 2652.527 ; gain = 2099.590
+INFO: [Common 17-1381] The checkpoint 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/aluhls/aluhls/aluhls.runs/synth_1/alu_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_wrapper_utilization_synth.rpt -pb alu_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 16 03:28:53 2025...

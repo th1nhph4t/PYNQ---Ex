@@ -1,0 +1,6 @@
+In file included from src/analog.c:44:
+In file included from src/analog.h:35:
+src/pytypes.h:12:10: fatal error: 'detail/common.h' file not found
+#include "detail/common.h"
+         ^~~~~~~~~~~~~~~~~
+1 error generated.

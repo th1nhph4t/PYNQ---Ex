@@ -1,0 +1,8 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/basecnn/basecnn.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/combined_tb.v,1736063865,verilog,,,,combined_tb,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/line_buffer.v,1736063865,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/muladdtree3x3.v,,line_buffer,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/muladdtree3x3.v,1736063865,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/basecnn/combined_tb.v,,muladdtree3x3,,,,,,,,
