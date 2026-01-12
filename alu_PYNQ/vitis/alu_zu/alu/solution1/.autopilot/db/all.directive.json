@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "ALU",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "ALU"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu/alu/solution1/csynth.tcl",
+    "sourceLine": 14,
+    "success": true
+  }
+]

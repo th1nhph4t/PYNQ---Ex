@@ -1,0 +1,139 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'ALU'" level="0">
+<item name = "Date">Tue Sep 16 03:06:40 2025
+</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
+<item name = "Project">alu</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 3.728 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 747, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, -, 182, 296, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 65, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 182, 296, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln29_fu_212_p2">+, 0, 0, 39, 32, 32</column>
+<column name="sub_ln30_fu_205_p2">-, 0, 0, 39, 32, 32</column>
+<column name="and_ln32_fu_185_p2">and, 0, 0, 32, 32, 32</column>
+<column name="and_ln34_fu_165_p2">and, 0, 0, 32, 32, 32</column>
+<column name="ashr_ln38_fu_137_p2">ashr, 0, 0, 100, 32, 32</column>
+<column name="icmp_ln39_fu_122_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln40_fu_107_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln41_fu_92_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="or_ln33_fu_172_p2">or, 0, 0, 32, 32, 32</column>
+<column name="or_ln35_fu_158_p2">or, 0, 0, 32, 32, 32</column>
+<column name="select_ln39_fu_128_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln40_fu_113_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln41_fu_98_p3">select, 0, 0, 32, 1, 32</column>
+<column name="shl_ln37_fu_144_p2">shl, 0, 0, 100, 32, 32</column>
+<column name="xor_ln31_fu_198_p2">xor, 0, 0, 32, 2, 32</column>
+<column name="xor_ln32_fu_191_p2">xor, 0, 0, 32, 2, 32</column>
+<column name="xor_ln33_fu_178_p2">xor, 0, 0, 32, 32, 2</column>
+<column name="xor_ln36_fu_151_p2">xor, 0, 0, 32, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="result">65, 15, 32, 480</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_AWADDR">in, 6, s_axi, control, pointer</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, pointer</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, pointer</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_ARADDR">in, 6, s_axi, control, pointer</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, pointer</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, pointer</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, ALU, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, ALU, return value</column>
+</table>
+</item>
+</section>
+</profile>
