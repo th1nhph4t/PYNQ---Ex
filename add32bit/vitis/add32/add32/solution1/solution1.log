@@ -1,0 +1,90 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu5eg-sfvc784-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 144.445 MB.
+INFO: [HLS 200-10] Analyzing design file 'adder.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.312 seconds; current allocated memory: 145.918 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 13 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 14 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.466 seconds; current allocated memory: 147.734 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 147.734 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 151.590 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 152.699 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 173.074 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 173.098 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'add' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 173.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 173.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'add/c' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'add' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b' and 'c' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 173.098 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.302 seconds; current allocated memory: 176.672 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.636 seconds; current allocated memory: 182.367 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for add.
+INFO: [VLOG 209-307] Generating Verilog RTL for add.
+INFO: [HLS 200-789] **** Estimated Fmax: 312.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 11.178 seconds; current allocated memory: 38.090 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu5eg-sfvc784-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file add32/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.375 seconds; current allocated memory: 6.820 MB.

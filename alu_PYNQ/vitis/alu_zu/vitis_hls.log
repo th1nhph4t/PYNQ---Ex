@@ -1,0 +1,43 @@
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'phat6' on host 'thinhphat' (Windows NT_amd64 version 6.2) on Tue Sep 16 03:10:32 +0700 2025
+INFO: [HLS 200-10] In directory 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu/alu/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu/alu/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project alu 
+INFO: [HLS 200-10] Opening project 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu/alu'.
+INFO: [HLS 200-1510] Running: set_top ALU 
+INFO: [HLS 200-1510] Running: add_files alu.cpp 
+INFO: [HLS 200-10] Adding design file 'alu.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/alu/alu/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu5eg-sfvc784-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 490.438 ; gain = 176.559
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 16 03:10:43 2025...
+INFO: [HLS 200-802] Generated output file alu/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.581 seconds; current allocated memory: 7.199 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 12.082 seconds; peak allocated memory: 139.602 MB.

@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+---- K?T QU? ----
+PC  = 3008
+IR  = 0fff
+R1 (LEA) = 3005 (expect 3005)
+R2 (LD ) = xxxx (expect 0012)
+R3 (ADD) = xxxx (expect 0012 + 5 = 0017)
+R4 (NOT) = xxxx (~0017 = FFE8)
+R5 (ADD maybe skipped if R3>0) = 0000
+R6 (AND) = 0000 (R4 & R3)
+NZP = 001
+$stop called at time : 615 ns : File "C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/lc3/vivadoRTL/lc3/lc3.srcs/sim_1/new/lc3_cpu_tb.v" Line 88

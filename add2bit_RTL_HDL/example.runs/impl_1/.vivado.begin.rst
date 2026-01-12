@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="27628" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="28384" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="26216" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="13848" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="28192" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="phat6" Host="THINHPHAT" Pid="25148" HostCore="16" HostMemory="017024741376">
+    </Process>
+</ProcessHandle>

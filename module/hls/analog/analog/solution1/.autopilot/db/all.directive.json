@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "analog_open_xadc",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "analog_open_xadc"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/module/hls/analog/analog/solution1/csynth.tcl",
+    "sourceLine": 15,
+    "success": false
+  }
+]

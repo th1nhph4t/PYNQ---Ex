@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "add",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "add"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/csynth.tcl",
+    "sourceLine": 14,
+    "success": true
+  }
+]

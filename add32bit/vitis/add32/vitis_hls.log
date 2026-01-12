@@ -1,0 +1,40 @@
+ECHO is off.
+ECHO is off.
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'phat6' on host 'thinhphat' (Windows NT_amd64 version 6.2) on Sun Sep 14 16:23:21 +0700 2025
+INFO: [HLS 200-10] In directory 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project add32 
+INFO: [HLS 200-10] Opening project 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32'.
+INFO: [HLS 200-1510] Running: set_top add 
+INFO: [HLS 200-1510] Running: add_files adder.cpp 
+INFO: [HLS 200-10] Adding design file 'adder.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/phat6/OneDrive/Desktop/testnaykia/vitis/add32/add32/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu5eg-sfvc784-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 490.609 ; gain = 177.707
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 14 16:23:37 2025...
+INFO: [HLS 200-802] Generated output file add32/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.375 seconds; current allocated memory: 6.820 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 16.889 seconds; peak allocated memory: 138.910 MB.

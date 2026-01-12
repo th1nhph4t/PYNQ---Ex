@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'ALU'
+================================================================
+* Date:           Tue Sep 16 03:06:40 2025
+
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+* Project:        alu
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.728 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     747|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        0|     -|     182|     296|    0|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      65|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     182|    1108|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |control_s_axi_U  |control_s_axi  |        0|   0|  182|  296|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+    |Total            |               |        0|   0|  182|  296|    0|
+    +-----------------+---------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+-----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+-----+------------+------------+
+    |add_ln29_fu_212_p2     |         +|   0|  0|   39|          32|          32|
+    |sub_ln30_fu_205_p2     |         -|   0|  0|   39|          32|          32|
+    |and_ln32_fu_185_p2     |       and|   0|  0|   32|          32|          32|
+    |and_ln34_fu_165_p2     |       and|   0|  0|   32|          32|          32|
+    |ashr_ln38_fu_137_p2    |      ashr|   0|  0|  100|          32|          32|
+    |icmp_ln39_fu_122_p2    |      icmp|   0|  0|   39|          32|          32|
+    |icmp_ln40_fu_107_p2    |      icmp|   0|  0|   39|          32|          32|
+    |icmp_ln41_fu_92_p2     |      icmp|   0|  0|   39|          32|          32|
+    |or_ln33_fu_172_p2      |        or|   0|  0|   32|          32|          32|
+    |or_ln35_fu_158_p2      |        or|   0|  0|   32|          32|          32|
+    |select_ln39_fu_128_p3  |    select|   0|  0|   32|           1|          32|
+    |select_ln40_fu_113_p3  |    select|   0|  0|   32|           1|          32|
+    |select_ln41_fu_98_p3   |    select|   0|  0|   32|           1|          32|
+    |shl_ln37_fu_144_p2     |       shl|   0|  0|  100|          32|          32|
+    |xor_ln31_fu_198_p2     |       xor|   0|  0|   32|           2|          32|
+    |xor_ln32_fu_191_p2     |       xor|   0|  0|   32|           2|          32|
+    |xor_ln33_fu_178_p2     |       xor|   0|  0|   32|          32|           2|
+    |xor_ln36_fu_151_p2     |       xor|   0|  0|   32|          32|          32|
+    +-----------------------+----------+----+---+-----+------------+------------+
+    |Total                  |          |   0|  0|  747|         423|         546|
+    +-----------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +--------+----+-----------+-----+-----------+
+    |  Name  | LUT| Input Size| Bits| Total Bits|
+    +--------+----+-----------+-----+-----------+
+    |result  |  65|         15|   32|        480|
+    +--------+----+-----------+-----+-----------+
+    |Total   |  65|         15|   32|        480|
+    +--------+----+-----------+-----+-----------+
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+--------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|   Protocol   | Source Object|    C Type    |
++-----------------------+-----+-----+--------------+--------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|         s_axi|       control|       pointer|
+|s_axi_control_AWREADY  |  out|    1|         s_axi|       control|       pointer|
+|s_axi_control_AWADDR   |   in|    6|         s_axi|       control|       pointer|
+|s_axi_control_WVALID   |   in|    1|         s_axi|       control|       pointer|
+|s_axi_control_WREADY   |  out|    1|         s_axi|       control|       pointer|
+|s_axi_control_WDATA    |   in|   32|         s_axi|       control|       pointer|
+|s_axi_control_WSTRB    |   in|    4|         s_axi|       control|       pointer|
+|s_axi_control_ARVALID  |   in|    1|         s_axi|       control|       pointer|
+|s_axi_control_ARREADY  |  out|    1|         s_axi|       control|       pointer|
+|s_axi_control_ARADDR   |   in|    6|         s_axi|       control|       pointer|
+|s_axi_control_RVALID   |  out|    1|         s_axi|       control|       pointer|
+|s_axi_control_RREADY   |   in|    1|         s_axi|       control|       pointer|
+|s_axi_control_RDATA    |  out|   32|         s_axi|       control|       pointer|
+|s_axi_control_RRESP    |  out|    2|         s_axi|       control|       pointer|
+|s_axi_control_BVALID   |  out|    1|         s_axi|       control|       pointer|
+|s_axi_control_BREADY   |   in|    1|         s_axi|       control|       pointer|
+|s_axi_control_BRESP    |  out|    2|         s_axi|       control|       pointer|
+|ap_clk                 |   in|    1|  ap_ctrl_none|           ALU|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_none|           ALU|  return value|
++-----------------------+-----+-----+--------------+--------------+--------------+
+

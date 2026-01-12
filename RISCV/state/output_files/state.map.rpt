@@ -1,0 +1,528 @@
+Analysis & Synthesis report for state
+Wed Sep 17 08:24:36 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |core|controller:CONTROLLER|current_state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: alu:ALU
+ 13. Parameter Settings for User Entity Instance: controller:CONTROLLER
+ 14. Port Connectivity Checks: "pc:PC"
+ 15. Port Connectivity Checks: "controller:CONTROLLER"
+ 16. Port Connectivity Checks: "accum:ACCUM"
+ 17. Port Connectivity Checks: "ins_reg:INS_REG"
+ 18. Port Connectivity Checks: "mux:MUX"
+ 19. Port Connectivity Checks: "gen_reg:GEN_REG"
+ 20. Port Connectivity Checks: "ram:RAM"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 17 08:24:36 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; state                                           ;
+; Top-level Entity Name              ; core                                            ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 10                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; core               ; state              ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++---------------------------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path                  ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++---------------------------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; ../../../../Downloads/New folder (2)/rom.v        ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/rom.v        ;         ;
+; ../../../../Downloads/New folder (2)/ram.v        ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/ram.v        ;         ;
+; ../../../../Downloads/New folder (2)/mux.v        ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/mux.v        ;         ;
+; ../../../../Downloads/New folder (2)/gen_reg.v    ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/gen_reg.v    ;         ;
+; ../../../../Downloads/New folder (2)/ins_reg.v    ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/ins_reg.v    ;         ;
+; ../../../../Downloads/New folder (2)/accum.v      ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/accum.v      ;         ;
+; ../../../../Downloads/New folder (2)/alu.v        ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/alu.v        ;         ;
+; ../../../../Downloads/New folder (2)/controller.v ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/controller.v ;         ;
+; ../../../../Downloads/New folder (2)/pc.v         ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/pc.v         ;         ;
+; ../../../../Downloads/New folder (2)/core.v       ; yes             ; User Verilog HDL File  ; C:/Users/phat6/Downloads/New folder (2)/core.v       ;         ;
++---------------------------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+
+
++-----------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary   ;
++--------------------------+--------------------+
+; Resource                 ; Usage              ;
++--------------------------+--------------------+
+; I/O pins                 ; 10                 ;
+; DSP block 9-bit elements ; 0                  ;
+; Maximum fan-out node     ; data_out[0]~output ;
+; Maximum fan-out          ; 1                  ;
+; Total fan-out            ; 10                 ;
+; Average fan-out          ; 0.50               ;
++--------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |core                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 10   ; 0            ; |core               ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |core|controller:CONTROLLER|current_state                                                                                                                                                                                                                                           ;
++---------------------+------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+---------------------+
+; Name                ; current_state.S0 ; current_state.S12 ; current_state.S11 ; current_state.S10 ; current_state.S9 ; current_state.S8 ; current_state.S7 ; current_state.S6 ; current_state.S5 ; current_state.S4 ; current_state.S3 ; current_state.S2 ; current_state.S1 ; current_state.Sidle ;
++---------------------+------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+---------------------+
+; current_state.Sidle ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                   ;
+; current_state.S1    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                   ;
+; current_state.S2    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                   ;
+; current_state.S3    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                   ;
+; current_state.S4    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S5    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S6    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S7    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S8    ; 0                ; 0                 ; 0                 ; 0                 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S9    ; 0                ; 0                 ; 0                 ; 0                 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S10   ; 0                ; 0                 ; 0                 ; 1                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S11   ; 0                ; 0                 ; 1                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S12   ; 0                ; 1                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
+; current_state.S0    ; 1                ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                   ;
++---------------------+------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+---------------------+
+
+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++-------------------------------------------+----------------------------------------+
+; Register name                             ; Reason for Removal                     ;
++-------------------------------------------+----------------------------------------+
+; accum:ACCUM|out[0..7]                     ; Stuck at GND due to stuck port clear   ;
+; ins_reg:INS_REG|ins_p1[5..7]              ; Stuck at GND due to stuck port clear   ;
+; controller:CONTROLLER|current_state.S3    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S4    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S5    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S7    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S9    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S11   ; Lost fanout                            ;
+; controller:CONTROLLER|current_state~4     ; Lost fanout                            ;
+; controller:CONTROLLER|current_state~5     ; Lost fanout                            ;
+; controller:CONTROLLER|current_state~6     ; Lost fanout                            ;
+; controller:CONTROLLER|current_state~7     ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S6    ; Stuck at GND due to stuck port data_in ;
+; controller:CONTROLLER|current_state.S8    ; Stuck at GND due to stuck port data_in ;
+; controller:CONTROLLER|current_state.S10   ; Stuck at GND due to stuck port data_in ;
+; controller:CONTROLLER|current_state.S12   ; Stuck at GND due to stuck port data_in ;
+; controller:CONTROLLER|current_state.Sidle ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S1    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S2    ; Lost fanout                            ;
+; controller:CONTROLLER|current_state.S0    ; Lost fanout                            ;
+; Total Number of Removed Registers = 29    ;                                        ;
++-------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                    ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal ; Registers Removed due to This Register                                            ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
+; controller:CONTROLLER|current_state~4 ; Lost Fanouts       ; controller:CONTROLLER|current_state.Sidle, controller:CONTROLLER|current_state.S1 ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:ALU ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; NOP            ; 000   ; Unsigned Binary             ;
+; LDO            ; 001   ; Unsigned Binary             ;
+; LDA            ; 010   ; Unsigned Binary             ;
+; STO            ; 011   ; Unsigned Binary             ;
+; PRE            ; 100   ; Unsigned Binary             ;
+; XOR            ; 101   ; Unsigned Binary             ;
+; LDM            ; 110   ; Unsigned Binary             ;
+; HLT            ; 111   ; Unsigned Binary             ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controller:CONTROLLER ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; NOP            ; 000   ; Unsigned Binary                           ;
+; LDO            ; 001   ; Unsigned Binary                           ;
+; LDA            ; 010   ; Unsigned Binary                           ;
+; STO            ; 011   ; Unsigned Binary                           ;
+; PRE            ; 100   ; Unsigned Binary                           ;
+; XOR            ; 101   ; Unsigned Binary                           ;
+; LDM            ; 110   ; Unsigned Binary                           ;
+; HLT            ; 111   ; Unsigned Binary                           ;
+; Sidle          ; 1111  ; Unsigned Binary                           ;
+; S0             ; 0000  ; Unsigned Binary                           ;
+; S1             ; 0001  ; Unsigned Binary                           ;
+; S2             ; 0010  ; Unsigned Binary                           ;
+; S3             ; 0011  ; Unsigned Binary                           ;
+; S4             ; 0100  ; Unsigned Binary                           ;
+; S5             ; 0101  ; Unsigned Binary                           ;
+; S6             ; 0110  ; Unsigned Binary                           ;
+; S7             ; 0111  ; Unsigned Binary                           ;
+; S8             ; 1000  ; Unsigned Binary                           ;
+; S9             ; 1001  ; Unsigned Binary                           ;
+; S10            ; 1010  ; Unsigned Binary                           ;
+; S11            ; 1011  ; Unsigned Binary                           ;
+; S12            ; 1100  ; Unsigned Binary                           ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:PC"                                                                                 ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; pc_addr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "controller:CONTROLLER"                                                                                                        ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                  ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; ram_ena   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; rom_ena   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; ram_write ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; ram_read  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; rom_read  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; fetch     ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "fetch[1..1]" have no fanouts ;
+; fetch     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
+; write_r   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                 ;
+; read_r    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                 ;
+; ad_sel    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                 ;
++-----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "accum:ACCUM"                                                                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ins_reg:INS_REG"                                                                                                                                 ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                      ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; fetch[1] ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
+; fetch[0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
+; rst      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ad1      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; ad2      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux:MUX"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sel  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; addr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gen_reg:GEN_REG"                                                                                                                            ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; addr ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ram:RAM"                                                                                                                                     ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; write ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Sep 17 08:24:35 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off state -c state
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/rom.v
+    Info (12023): Found entity 1: rom
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/ram.v
+    Info (12023): Found entity 1: ram
+Warning (12090): Entity "mux" obtained from "../../../../Downloads/New folder (2)/mux.v" instead of from Quartus II megafunction library
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/mux.v
+    Info (12023): Found entity 1: mux
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/gen_reg.v
+    Info (12023): Found entity 1: gen_reg
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/ins_reg.v
+    Info (12023): Found entity 1: ins_reg
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/accum.v
+    Info (12023): Found entity 1: accum
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/alu.v
+    Info (12023): Found entity 1: alu
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/controller.v
+    Info (12023): Found entity 1: controller
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/pc.v
+    Info (12023): Found entity 1: pc
+Info (12021): Found 1 design units, including 1 entities, in source file /users/phat6/downloads/new folder (2)/core.v
+    Info (12023): Found entity 1: core
+Warning (10236): Verilog HDL Implicit Net warning at core.v(83): created implicit net for "fetch"
+Info (12127): Elaborating entity "core" for the top level hierarchy
+Info (12128): Elaborating entity "rom" for hierarchy "rom:ROM"
+Warning (10030): Net "memory.data_a" at rom.v(6) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "memory.waddr_a" at rom.v(6) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "memory.we_a" at rom.v(6) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "ram" for hierarchy "ram:RAM"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU"
+Info (12128): Elaborating entity "gen_reg" for hierarchy "gen_reg:GEN_REG"
+Info (12128): Elaborating entity "mux" for hierarchy "mux:MUX"
+Info (12128): Elaborating entity "ins_reg" for hierarchy "ins_reg:INS_REG"
+Info (12128): Elaborating entity "accum" for hierarchy "accum:ACCUM"
+Info (12128): Elaborating entity "controller" for hierarchy "controller:CONTROLLER"
+Info (12128): Elaborating entity "pc" for hierarchy "pc:PC"
+Warning (10230): Verilog HDL assignment warning at pc.v(11): truncated value with size 32 to match size of target (8)
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ena_ram" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "ena_rom" is missing source, defaulting to GND
+    Warning (12110): Net "ena_ram" is missing source, defaulting to GND
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "data_out[0]" is fed by GND
+    Warning (13033): The pin "data_out[1]" is fed by GND
+    Warning (13033): The pin "data_out[2]" is fed by GND
+    Warning (13033): The pin "data_out[3]" is fed by GND
+    Warning (13033): The pin "data_out[4]" is fed by GND
+    Warning (13033): The pin "data_out[5]" is fed by GND
+    Warning (13033): The pin "data_out[6]" is fed by GND
+    Warning (13033): The pin "data_out[7]" is fed by GND
+Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[0]" to the node "data_out[0]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[1]" to the node "data_out[1]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[2]" to the node "data_out[2]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[3]" to the node "data_out[3]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[4]" to the node "data_out[4]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[5]" to the node "data_out[5]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[6]" to the node "data_out[6]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "gen_reg:GEN_REG|data[7]" to the node "data_out[7]"
+Warning (13030): Reduced the following open-drain buffers that are fed by GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[0]" to the output pin "data_out[0]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[1]" to the output pin "data_out[1]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[2]" to the output pin "data_out[2]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[3]" to the output pin "data_out[3]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[4]" to the output pin "data_out[4]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[5]" to the output pin "data_out[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[6]" to the output pin "data_out[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "accum_out[7]" to the output pin "data_out[7]" to GND
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "data_out[0]" is stuck at GND
+    Warning (13410): Pin "data_out[1]" is stuck at GND
+    Warning (13410): Pin "data_out[2]" is stuck at GND
+    Warning (13410): Pin "data_out[3]" is stuck at GND
+    Warning (13410): Pin "data_out[4]" is stuck at GND
+    Warning (13410): Pin "data_out[5]" is stuck at GND
+    Warning (13410): Pin "data_out[6]" is stuck at GND
+    Warning (13410): Pin "data_out[7]" is stuck at GND
+Info (17049): 14 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "rst"
+Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 8 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 4653 megabytes
+    Info: Processing ended: Wed Sep 17 08:24:36 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

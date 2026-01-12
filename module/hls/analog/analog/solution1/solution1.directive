@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="analog_open_xadc" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="analog_open_xadc"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

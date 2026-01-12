@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="adder.cpp" line="2" pragmaType="interface" parentfunction="add" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="adder.cpp" line="3" pragmaType="interface" parentfunction="add" mode="s_axilite" port="a" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="adder.cpp" line="4" pragmaType="interface" parentfunction="add" mode="s_axilite" port="b" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="adder.cpp" line="5" pragmaType="interface" parentfunction="add" mode="s_axilite" port="c" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

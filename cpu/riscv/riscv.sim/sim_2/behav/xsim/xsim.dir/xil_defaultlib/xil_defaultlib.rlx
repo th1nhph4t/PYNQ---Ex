@@ -1,0 +1,15 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.sim/sim_2/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/accum.v,1758068016,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/alu.v,,accum,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/alu.v,1758068073,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/controller.v,,alu,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/controller.v,1758068086,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/gen_reg.v,,controller,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/core.v,1758068964,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/gen_reg.v,,core,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/gen_reg.v,1758067856,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/ins_reg.v,,gen_reg,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/ins_reg.v,1758067940,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/mux.v,,ins_reg,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/mux.v,1758067781,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/pc.v,,mux,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/pc.v,1758067834,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/ram.v,,pc,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/ram.v,1758067748,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/rom.v,,ram,,,,,,,,
+C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/rom.v,1758067738,verilog,,C:/Users/phat6/OneDrive/Desktop/testnaykia/vivado/cpu/riscv/riscv.srcs/sources_1/new/core.v,,rom,,,,,,,,
